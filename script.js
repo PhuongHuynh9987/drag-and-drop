@@ -25,17 +25,21 @@ let currentColumn;
 let dragging;
 
 function getSavedColumns(){
-    if (localStorage.getItem('backlogItems')) {
-        backlogListArray = JSON.parse(localStorage.backlogItems);
-        progressListArray = JSON.parse(localStorage.progressItems);
-        completeListArray = JSON.parse(localStorage.completeItems);
-        onHoldListArray = JSON.parse(localStorage.onHoldItems);
-      } else {
-        backlogListArray = ['Release the course', 'Sit back and relax'];
-        progressListArray = ['Work on projects', 'Listen to music'];
-        completeListArray = ['Being cool', 'Getting stuff done'];
-        onHoldListArray = ['Being uncool']
-        }
+    // if (localStorage.getItem('backlogItems')) {
+    //     backlogListArray = JSON.parse(localStorage.backlogItems);
+    //     progressListArray = JSON.parse(localStorage.progressItems);
+    //     completeListArray = JSON.parse(localStorage.completeItems);
+    //     onHoldListArray = JSON.parse(localStorage.onHoldItems);
+    //   } else {
+    //     backlogListArray = ['Release the course', 'Sit back and relax'];
+    //     progressListArray = ['Work on projects', 'Listen to music'];
+    //     completeListArray = ['Being cool', 'Getting stuff done'];
+    //     onHoldListArray = ['Being uncool']
+    //     }
+    backlogListArray = JSON.parse(localStorage.backlogItems);
+    progressListArray = JSON.parse(localStorage.progressItems);
+    completeListArray = JSON.parse(localStorage.completeItems);
+    onHoldListArray = JSON.parse(localStorage.onHoldItems);
 }
 
 function updateSavedColumns() {
@@ -147,7 +151,6 @@ function updateItem(id,column){
 function filterArray(array){
     console.log(array);
     const filtering = array.filter(item => item != 'null');
-    console.log(filtering);
     return filtering;
 }
 
