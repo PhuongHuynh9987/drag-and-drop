@@ -18,7 +18,6 @@ let progressListArray = [];
 let completeListArray = [];
 let onHoldListArray = [];
 
-
 let updateOnLoad = false;    //when loading the, 
 let draggedItem;
 let currentColumn;
@@ -151,10 +150,11 @@ function filterArray(array){
 }
 
 // //add to column list, reset textbox
-function addToColumn(column){
+function addToColumn(column) {
     const itemText = addItems[column].textContent;
     const selectedArray = listArrays[column];
     selectedArray.push(itemText);
+    addItems[column].textContent = '';          //to empty the box after typing
     updateDOM();
 }
 
@@ -163,7 +163,6 @@ function showInputBox(column){
     addBtns[column].style.visibility = 'hidden'; 
     saveItemBtns[column].style.display = 'flex';   // when we click on the button, it will display
     addItemContainers[column].style.display = 'flex';
-   
 }
 
 //show add item input box

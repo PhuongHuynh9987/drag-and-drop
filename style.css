@@ -5,7 +5,7 @@
 body {  
   margin: 0;
   min-height: 100vh;  
-  background: url('/bg.png');
+  background: url('bg.png');
   background-repeat: repeat;
   background-attachment:fixed;
   background-position: 50% 60%;
@@ -95,7 +95,7 @@ li {
 
 .add-btn {
   border-radius: 10px;
-  padding: 0.4rem 2.3rem;
+  padding: 0.4rem 1rem;
   width: fit-content;
   margin:auto;
   display:flex;
@@ -103,6 +103,12 @@ li {
 
 .solid {
   display: none;
+  color: white;
+  background-color: rgba(0,0,0,0.3);
+}
+
+.solid:hover{
+  color: black;
 }
 
 .add-item {
@@ -116,21 +122,22 @@ li {
   color: black;
   padding: 10px;
 }
+
 .add-btn:hover {
   background-color: white;
   transition: all 0.5s ease-in;
 }
 
-/* .add-btn:active {
+.add-btn:active {
   transform: scale(0.97);
-} */
+}
 
-.plus-sign {
+/* .plus-sign {
   font-size: 1.5rem;
   margin-right: 5px;
   position: relative;
   top: -3px;
-}
+} */
 
 .custom-scroll {
   overflow-y: auto;
@@ -167,7 +174,7 @@ li {
 @media screen and (max-width: 800px) {
   body {
     overflow-y: auto;
-    font-size: 0.8rem;
+    font-size: 0.55rem;
   }
 
   .drag-container {
@@ -175,7 +182,7 @@ li {
   }
 
   .drag-columns{
-    width: 16rem;
+    width: 10rem;
   }
 
   .drag-list {
