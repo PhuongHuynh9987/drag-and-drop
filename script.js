@@ -13,10 +13,10 @@ const completeList = document.getElementById('complete');
 const onHoldList = document.getElementById('onHold');
 
 // Initialize Arrays
-let backlogListArray = [];
-let progressListArray = [];
-let completeListArray = [];
-let onHoldListArray = [];
+let backlogListArray;
+let progressListArray;
+let completeListArray;
+let onHoldListArray;
 
 let updateOnLoad = false;    //when loading the, 
 let draggedItem;
