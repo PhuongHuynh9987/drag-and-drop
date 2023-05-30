@@ -10,6 +10,7 @@ body {
   background-attachment:fixed;
   /* background-position: 50% 60%; */
   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-align: center;
 }
 .drag-columns {
   /* flex: 1; */
@@ -163,7 +164,6 @@ li {
 @media screen and (max-width: 1250px) {
   h1 {
     font-size: 3rem;
-    text-align: center;
   }
   .drag-item {
     width: auto;
@@ -176,14 +176,14 @@ li {
 }
 
 /* Media Query: Large Smartphone (Vertical) */
-@media screen and (max-width: 692px) {
+@media screen and (max-width: 700px) {
   body {
     overflow-y: auto;
     font-size: 0.55rem;
   }
 
   .drag-container {
-    margin: 10px;
+    margin:0.2rem;
   }
 
   .drag-columns{
