@@ -183,7 +183,8 @@ li {
   }
 
   .drag-container {
-    margin:0.2rem;
+    margin-left:-1rem;
+    margin-right: 0.2rem;
   }
 
   .drag-columns{
